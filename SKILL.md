@@ -1,17 +1,6 @@
-﻿---
+---
 name: data-chart-builder
-description: >-
-  Python matplotlib/seaborn publication-quality charting for work data analysis.
-  Covers 9 chart families: bar charts, line/trend, heatmaps, scatter/bubble,
-  radar/polar, distributions, forest/interval, area/stacked, network/matrix.
-  Use whenever the user asks to create, revise, or polish data charts — 
-  grouped bars, trend lines, heatmaps, scatter plots, radar charts, 
-  histograms/violin/box, forest plots, stacked areas, or network diagrams.
-  Chinese phrasings also trigger: 画图、作图、柱状图、折线图、热图、散点图、
-  气泡图、雷达图、分布图、小提琴图、箱线图、森林图、区间图、面积图、堆叠图、
-  网络图、矩阵图、数据可视化、图表.
-version: 1.0.0
-author: Adapted from nature-figure v2.0
+description: Create, revise, and polish publication-quality static data charts with Python matplotlib/seaborn. Use for bar charts, line/trend charts, heatmaps, scatter/bubble plots, radar/polar charts, distribution plots, forest/interval plots, area/stacked charts, network/matrix charts, and Chinese chart requests such as 画图, 作图, 柱状图, 折线图, 热图, 散点图, 气泡图, 雷达图, 分布图, 小提琴图, 箱线图, 森林图, 区间图, 面积图, 堆叠图, 网络图, 矩阵图, 数据可视化, or 图表.
 ---
 
 # Data Chart Builder — Router

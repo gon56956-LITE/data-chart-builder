@@ -1,0 +1,7 @@
+interface:
+  display_name: "Data Chart Builder"
+  short_description: "Build publication-quality static data charts"
+  default_prompt: "Use $data-chart-builder to create or polish this data chart."
+
+policy:
+  allow_implicit_invocation: true
