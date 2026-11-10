@@ -35,7 +35,7 @@ Load the corresponding section in [references/chart-recipes.md](references/chart
 |---|---|---|
 | 1 | Bar charts | 柱状图、分组柱状图、堆叠柱状图、bar、grouped bar、stacked bar、ablation bar |
 | 2 | Line & trend | 折线图、趋势、时间序列、line、trend、time series |
-| 3 | Heatmaps | 热图、热力图、heatmap、z-score heatmap |
+| 3 | Heatmaps, including [SHAP interaction matrices](references/shap-interaction.md) and [correlation matrices with outcome links](references/correlation-link-heatmap.md) | 热图、热力图、heatmap、z-score heatmap |
 | 4 | Scatter & bubble | 散点图、气泡图、scatter、bubble、correlation plot |
 | 5 | Radar & polar | 雷达图、极坐标、radar、polar、spider chart |
 | 6 | Distributions | 分布图、直方图、小提琴图、箱线图、histogram、violin、boxplot、ridgeline |

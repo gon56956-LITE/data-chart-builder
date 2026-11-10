@@ -1,0 +1,12 @@
+# SHAP interaction heatmap
+
+Use for a fitted, validated tree model when the user wants an overview of model main effects and pairwise interactions. This is an explanation of model predictions, not proof of causation.
+
+- Define the target, prediction time, features and independent evaluation population. Exclude target-derived variables and leakage. For repeated units, split by unit or time as appropriate; report held-out model performance and sample sizes.
+- Compute TreeExplainer interaction values on held-out samples. Confirm array dimensions, model output scale, and additivity; multiclass outputs require choosing an output explicitly. Preserve preprocessing and feature names.
+- Aggregate as mean(abs(interaction)) across samples, not abs(mean(interaction)). Diagonal cells are main effects; off-diagonal cells are symmetric half-interaction contributions. State explicitly whether cells show each half or twice that value for the full pair. Report units or model output scale.
+- Display one triangle for a compact view, or show a full symmetric matrix when requested. For the full matrix, fill one triangle with color and use sized circles plus numerical values in the other; put main-effect values on the colored diagonal. Clearly state both halves repeat the same interactions. [Synthetic example](../assets/shap-interaction-synthetic-example.png) illustrates this layout; the values are illustrative and not derived from a trained model. If main effects dwarf interactions, use a separate main-effect panel or separately scaled diagonal, clearly labeled. Use a perceptually ordered sequential palette for magnitudes and readable annotations. State sample count, aggregation, model and evaluation set in the caption.
+- Absolute magnitudes give neither direction nor causal effects. Follow up promising pairs with signed dependence or grouped plots and data coverage checks. Assess stability across groups or resamples; avoid causal or synergy claims without appropriate evidence.
+- If model performance, data coverage, dependencies, or the interaction computation are inadequate, report that limitation instead of fabricating a matrix. A synthetic example must be labeled synthetic.
+
+Reference: https://shap.readthedocs.io/en/stable/generated/shap.TreeExplainer.html
